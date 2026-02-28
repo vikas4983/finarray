@@ -16,12 +16,10 @@ class AssignRoleSeeder extends Seeder
     {
         $admin = Role::where('name', 'admin')->first();
         $member = Role::where('name', 'member')->first();
-
-        if ($admin) {
+if ($admin) {
             $admin->syncPermissions(Permission::all());
         }
-
-        if ($member) {
+ if ($member) {
             $member->syncPermissions(['view borrows']);
         }
     }
