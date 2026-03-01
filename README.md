@@ -3,15 +3,17 @@ git clone https://github.com/vikas4983/finarray.git
 cd finarray
 2. Install Dependencies:
 composer install
-3. Create Environment File:
+3. composer require laravel/jetstream && php artisan jetstream:install livewire
+
+4. Create Environment File:
 Copy the example file:
 cp .env.example .env
 Or use the .env file shared via email.
-4. Generate Application Key:
+5. Generate Application Key:
 php artisan key:generate
 
-5. Run Migrations:
+6. Run Migrations:
 php artisan migrate
-6. Run Seeders:
+7. Run Seeders:
 php artisan db:seed
-7. Start Development Server:
+8. Start Development Server:
